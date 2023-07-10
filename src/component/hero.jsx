@@ -2,6 +2,7 @@ import { profile } from '../assets';
 import '../index.css';
 export default function hero() {
   return (
+    <section id="home">
     <div className='sm:px-2 sm:h-[530px] md:h-[530px] sm:pt-0 pt-20 h-screen primaryColor items-center px-32 md:px-12'>
         {/* Disktop View */}
         <div className="sm:grid-cols-1 grid grid-cols-2 items-center">
@@ -36,6 +37,6 @@ export default function hero() {
             </div>
         </div>
     </div>
-    
+    </section>
   )
 }

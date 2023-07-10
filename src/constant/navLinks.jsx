@@ -2,7 +2,7 @@
 
 export const navLinks = [
     {
-        'id': '/',
+        'id': 'home',
         'title': 'Home',
     },
     {
@@ -14,7 +14,7 @@ export const navLinks = [
         'title': 'About',
     },
     {
-        'id': 'contact-me',
+        'id': 'contact',
         'title': 'Contact',
     }
 ];

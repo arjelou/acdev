@@ -27,6 +27,7 @@ const portfolioList = [
   }
 ]
   return (
+    <section id="portfolio">
     <div className="h-screen pt-28 sm:pt-5">
         <h1 className="sm:text-xl mb-4 text-3xl font-medium secondaryColorText">PORTFOLIO</h1> <br />
         <div className='sm:grid-cols-1 md:grid-cols-1 sm:flex-col grid grid-cols-3'>
@@ -43,10 +44,9 @@ const portfolioList = [
                   <p className="text-white md:text-xl sm:text-xs">{list.description}</p> 
               </div>
             </div>
-            
             ))}
         </div>
-       
     </div>
+    </section>
   )
 }

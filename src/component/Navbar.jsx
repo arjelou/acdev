@@ -1,7 +1,7 @@
 import React from 'react';
 import { navLinks } from '../constant/navLinks';
 import { logo, close, menu } from '../assets';
-// import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import '../index.css'
 export default class Navbar extends React.Component {
     constructor(props) {
@@ -47,9 +47,11 @@ export default class Navbar extends React.Component {
                         {navLinks.map((navLink, index) =>(
                             <li key={navLink.id}
                                 className={`${index === navLink.length-1 ? 'mr-0' : 'mb-4'} text-white font-poppins font-normal cursor-pointer`}>
-                                <a href={navLink.id}>
-                                    {navLink.title}
-                                </a>
+                                <Link activeClass="active" spy to={navLink.id}>
+                                    <a href={navLink.id}>
+                                        {navLink.title}
+                                    </a>
+                                </Link>
                             </li>
                         ))}
                     </>    

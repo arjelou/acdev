@@ -1,6 +1,7 @@
 
 export default function contact() {
   return (
+    <section id="contact">
     <div className="h-screen sm:pt-5">
         <h1 className="sm:text-xl mb-4 text-3xl font-medium secondaryColorText">CONTACT ME</h1>
         <div className="sm:flex sm:items-center sm:grid-cols-1 md:grid-cols-2 grid grid-cols-2 flex-col">
@@ -67,5 +68,6 @@ export default function contact() {
             </div>
         </div>
     </div>
+    </section>
   )
 }

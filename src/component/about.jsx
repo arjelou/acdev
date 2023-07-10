@@ -4,6 +4,7 @@ import '../index.css';
 
 export default function about() {
   return (
+    <section id="about">
     <div className='h-screen items-center'>
         <div className="sm:grid-cols-1 md:grid-cols-1 grid grid-cols-2 sm:px-5 px-32 md:px-12">
             <div className="sm:hidden flex flex-col m-auto">
@@ -57,5 +58,6 @@ export default function about() {
             </div>
         </div>
     </div>
+    </section>
   )
 }
