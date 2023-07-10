@@ -4,7 +4,7 @@ export default function contact() {
     <div className="h-screen sm:pt-5">
         <h1 className="sm:text-xl mb-4 text-3xl font-medium secondaryColorText">CONTACT ME</h1>
         <div className="sm:flex sm:items-center sm:grid-cols-1 md:grid-cols-2 grid grid-cols-2 flex-col">
-            <div className="sm:rounded-none primaryColor md:rounded-xl rounded-xl w-[400px] md:w-[320px]">
+            <div className="primaryColor md:rounded-xl sm:rounded-xl rounded-xl w-[400px] md:w-[320px] sm:w-[350px]">
                 <div className="flex-col space-y-3 p-5">
                     <h1 className="text-white font-bold text-4xl">
                         Get in Touch</h1>
