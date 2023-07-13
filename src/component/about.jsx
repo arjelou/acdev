@@ -5,7 +5,7 @@ import '../index.css';
 export default function about() {
   return (
     <section id="about">
-    <div className='h-screen items-center'>
+    <div className='h-screen pt-28 items-center sm:pt-5'>
         <div className="sm:grid-cols-1 md:grid-cols-1 grid grid-cols-2 sm:px-5 px-32 md:px-12">
             <div className="sm:hidden flex flex-col m-auto">
                 <img className='drop-shadow-2xl' 
@@ -43,7 +43,7 @@ export default function about() {
             </div>
         </div>
         {/* Skill Div */}
-        <div className="primaryColor h-[120px] mt-[15%] text-teal-50 flex justify-center items-center pl-5">
+        <div className="primaryColor h-[120px] mt-[10%] text-teal-50 flex justify-center items-center pl-5">
             <div>
                 <FaHtml5 size={60} title="HTML"/>
                 <h2 className="text-center m-auto">HTML</h2>
