@@ -1,6 +1,7 @@
 // import './App.css';
 import './index.css';
-import { Hero, About, Portfolio, Contact, Navbar } from './component';
+import { Hero, About, Portfolio, Navbar, Contact } from './component';
+// import Contact from './component/Contact';
 // import styles from './style';
 
 function App() {
@@ -20,7 +21,6 @@ function App() {
       <div className='mt-10 px-32 md:px-12 sm:mt-60 md:mt-[990px]'>
         <Contact />
       </div>
-      
     </div>
   )
 }

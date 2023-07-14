@@ -1,10 +1,30 @@
+// eslint-disable-next-line no-unused-vars
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import toast, { Toaster } from 'react-hot-toast';
 
+export const Contact = () =>{
 
-export default function contact(){
+    const notify = () => toast.success('Your message has been sent');
 
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ce7qb48', 'template_v34jpe4', form.current, 'Ki_-V7Bo-7_1TT7LF')
+      .then((result) => {
+            
+          console.log(result.text);
+          notify()
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   
   return (
     <section id="contact">
+    <Toaster />
     <div className="h-screen pt-28 sm:pt-5">
         <h1 className="sm:text-xl mb-4 text-3xl font-medium secondaryColorText">CONTACT ME</h1>
         <div className="sm:flex sm:items-center sm:grid-cols-1 md:grid-cols-2 grid grid-cols-2 flex-col">
@@ -45,19 +65,19 @@ export default function contact(){
             </div>
             <div className="flex justify-end sm:flex sm:items-center">
                <div>
-                    <form className="p-5">
+                    <form className="p-5" ref={form} onSubmit={sendEmail}>
                         <div className="sm:justify-center">
                             <h1 className="sm:text-2xl secondaryColorText text-4xl font-semibold">Send a Message</h1>
                             <div className="mt-6 space-y-3 flex-col">
-                                <input type="text" placeholder="Full Name" name='user_name'
+                                <input type="text" placeholder="Full Name" name='user_name' required
                                 className="sm:w-[300px] md:w-[350px] w-[550px] border px-3 py-2 rounded-md bg-blue-100" />
                             </div>
                             <div className="mt-6 space-y-3 flex-col">
-                                <input type="email" placeholder="Email Address" name='user_email'
+                                <input type="email" placeholder="Email Address" name='user_email' required
                                 className="sm:w-[300px] md:w-[350px] w-[550px] border px-3 py-2 rounded-md bg-blue-100" />
                             </div>
                             <div className="mt-6 space-y-3 flex-col">
-                                <textarea type="text" placeholder="Full Name" name='message'
+                                <textarea type="text" placeholder="Full Name" name='message' required
                                 className="sm:w-[300px] md:w-[350px] w-[550px] border px-3 py-2 rounded-md bg-blue-100 h-[130px]" />
                             </div>
                             <div className="mt-6 space-y-3 flex-col">
@@ -74,3 +94,5 @@ export default function contact(){
     </section>
   )
 }
+
+export default Contact;
