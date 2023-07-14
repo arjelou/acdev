@@ -20,6 +20,7 @@ function App() {
       <div className='mt-10 px-32 md:px-12 sm:mt-60 md:mt-[990px]'>
         <Contact />
       </div>
+      
     </div>
   )
 }
