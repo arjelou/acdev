@@ -1,7 +1,7 @@
 // import './App.css';
 import './index.css';
-import { Hero, About, Portfolio, Navbar, Contact } from './component';
-// import Contact from './component/Contact';
+import { Hero, About, Portfolio, Navbar } from './component';
+import Contact from './constant/Contact';
 // import styles from './style';
 
 function App() {
