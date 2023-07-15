@@ -13,8 +13,7 @@ export const Contact = () =>{
     e.preventDefault();
 
     emailjs.sendForm('service_ce7qb48', 'template_v34jpe4', form.current, 'Ki_-V7Bo-7_1TT7LF')
-      .then((result) => {
-            
+      .then((result) => {  
           console.log(result.text);
           notify()
       }, (error) => {
@@ -77,7 +76,7 @@ export const Contact = () =>{
                                 className="sm:w-[300px] md:w-[350px] w-[550px] border px-3 py-2 rounded-md bg-blue-100" />
                             </div>
                             <div className="mt-6 space-y-3 flex-col">
-                                <textarea type="text" placeholder="Full Name" name='message' required
+                                <textarea type="text" placeholder="Message" name='message' required
                                 className="sm:w-[300px] md:w-[350px] w-[550px] border px-3 py-2 rounded-md bg-blue-100 h-[130px]" />
                             </div>
                             <div className="mt-6 space-y-3 flex-col">
