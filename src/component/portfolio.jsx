@@ -13,7 +13,7 @@ const portfolioList = [
   { 
     id: 2,
     name: 'Chat App',
-    description: 'A chat web application in real-time communication. Features: user can signup and log in | and send messages to others. Tech stack: React, Node, MySQL, BootStrap, CSS.',
+    description: 'A chat web application in real-time communication, user can signup and log in and send messages to others.',
     image: chatapp,
     link: 'https://chatapp-arjelou.vercel.app/',
     repo: 'https://github.com/arjelou/chatappclient',
@@ -31,7 +31,7 @@ const portfolioList = [
     <section id="portfolio">
     <div className="h-screen pt-28 sm:pt-5">
         <h1 className="sm:text-xl mb-4 text-3xl font-medium secondaryColorText">PORTFOLIO</h1> <br />
-        <div className='sm:grid-cols-1 md:grid-cols-1 sm:flex-col grid grid-cols-3'>
+        <div className='sm:grid-cols-1 md:grid-cols-1 sm:flex-col grid grid-cols-3 gap-3'>
             {portfolioList.map((list) =>(
             <div key={list.id} className="sm:mt-3 sm:shadow-xl relative bg-cover bg-no-repeat">
               <img src={list.image} alt={list.name}
