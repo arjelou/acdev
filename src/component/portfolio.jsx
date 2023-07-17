@@ -1,4 +1,4 @@
-import { chatapp, b2b, website } from "../assets";
+import { chatapp, b2b, seoagency_mockup } from "../assets";
 
 export default function portfolio() {
 const portfolioList = [
@@ -20,11 +20,11 @@ const portfolioList = [
   },
   { 
     id: 3,
-    name: 'EveMasy - Under development',
-    description: 'Event Management is a web-based application designed to streamline the process of organizing and managing events.',
-    image: website,
-    link: '',
-    repo: 'https://github.com/arjelou/evemasy',
+    name: 'RankBoost SEO Agency',
+    description: 'RankBoost SEO Agency is a leading digital marketing agency specializing in search engine optimization (SEO) services.',
+    image: seoagency_mockup,
+    link: 'https://seoagency.vercel.app/',
+    repo: 'https://github.com/arjelou/seoagency',
   }
 ]
   return (

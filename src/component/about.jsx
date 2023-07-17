@@ -36,7 +36,7 @@ export default function about() {
                             <span className='font-normal'>Multimedia IT</span>
                         </h1>
                         <h1 className='font-bold mt-2'>EMPLOYMENT <br />
-                            <span className='font-normal'>Unemployed</span>
+                            <span className='font-normal'>Currently Employed</span>
                         </h1>
                     </div>
                 </div>
